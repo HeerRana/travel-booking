@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/766a5343f9.js" crossorigin="anonymous"></script>
+</head>
+<style>
+.container{
+    padding: 0 7%;
+}
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 7%;
+    font-size: 20px;
+    /* position: fixed; */
+    background-color: #333;
+}
+.logo{
+    width: 18%;
+     cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: larger;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.registration-btn{
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background-color: #999;
+    height: 1px;
+    width:100% ;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom:15px ;
+}
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30pxk;
+}
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid rgb(128, 61, 59);
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-info i{
+    color:rgb(128, 61, 59);
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size:20px;
+}
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar{
+    border: 1px solid #999;
+    padding-left: 20px 30px;
+    margin-top: 30px;
+}
+.sidebar h2{
+    font-weight: 500;
+}
+.slide h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+.cta-btn{
+    background-color: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.start-btn{
+    text-decoration: none;
+    background: #ff5361;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+</style>
+<body>
+<nav>
+        <img src="pics/logo2.jpg" alt="logo" class="logo">
+        <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="country.html" class="countr">Explore India</a></li>
+        <!-- <li><a href="#">Travel outside</a></li> -->
+        <!-- <li><a href="#">Online packages</a></li> -->
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- <a href="#" class="registration-btn">Register now</a> -->
+    </nav>
+
+<div class="container">
+    <div class="list-container">
+        <div class="left-col">
+            <p>200+ options</p>
+            <h1>Recommended Places in Jodhpur</h1>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/H31.jpeg">
+                </div>
+                <div class="house-info">
+                    <p>Private Villa in Jodhpur</p>
+                    <h3>Golden Glow Guesthouse</h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/H33.jpeg">
+                </div>
+                <div class="house-info">
+                    <p>Private Villa in Jodhpur</p>
+                    <h3>Sun-kissed Citadel Lodge</h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/H34.jpeg">
+                </div>
+                <div class="house-info">
+                    <p>Private Villa in Jodhpur</p>
+                    <h3> Marigold Oasis Inn
+                        </h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/H12.jpeg">
+                </div>
+                <div class="house-info">
+                    <p>Private Villa in Jodhpur</p>
+                    <h3>Blue Horizon Palace
+                       </h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/image-s5.png">
+                </div>
+                <div class="house-info">
+                    <p>Hotel in Jodhpur</p>
+                    <h3>Sandstone Serenity Hotel
+                        </h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="house">
+                <div class="house-img">
+                        <img src="pics/H39.jpeg">
+                </div>
+                <div class="house-info">
+                    <p>Private Villa in Jodhpur</p>
+                    <h3>Desert Mirage Manor
+                       </h3>
+                    <p>1 Bedroom / 1 Bathroom / wifi / kitchen</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="house-price">
+                        <p>2Guest</p>
+                        <h4>8000/- <span>per day</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="sidebar">
+                <h2>Select Filters</h2>
+                <h3> Royal Rajput Retreat
+                    </h3>
+                <div class="filter">
+                    <input type="checkbox"> <p>House</p> <span>(0k)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox"> <p>Hostel</p> <span>(0k)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox"> <p>Flat</p> <span>(0k)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox"> <p>Villa</p> <span>(0k)</span>
+                </div>
+                <div class="filter">
+                    <input type="checkbox"> <p>Guest Suite</p> <span>(0k)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="country.html" class="cta-btn">Previous</a>
+    <a href="#" class="start-btn">More</a>
+
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>Copyright &copy; 2023,Easy website</p>
+    </div>
+</div>
+
+
+
+
+    
+</body>
+</html>

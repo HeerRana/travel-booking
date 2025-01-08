@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/766a5343f9.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    font-size: 23px;
+    /* position: fixed; */
+    z-index: 100;   
+    background-color: #333; 
+}
+.logo{
+    width: 18%;
+    cursor: pointer;
+}
+/* img {
+    border-radius: 50%;
+} */
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: larger;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-family: Times New Roman;
+}
+.registration-btn{
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 70%;
+}
+body{
+    /* background-color: #; */
+    background-image:linear-gradient(rgba(228, 197, 158,0.3),rgba(199, 166, 128, 0.9));
+}
+.container .heading{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.container .heading h1{
+    color: #f15b43;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.wrapper{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    width: 50%;
+    margin: 0px 25px;
+}
+.content:hover{
+    transform: translateY(-10px);
+
+}
+.content h2{
+    font-size: 30px;
+    color: #284966;
+}
+.content p{
+    color: #666;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.content .btn{
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid #f15b43;
+    font-size: 19px;
+    color: #f15b43;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.content .btn::before{
+    position: absolute;
+    content: "";
+    border: 1px solid transparent;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f15b43;
+    z-index: -1;
+    transition: transform 0.7s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.5,0.4,0.7);
+    transform: scaleX(0);
+
+}
+.content .btn:hover{
+    color: #fff; 
+}
+.content .btn:hover::before{
+    transform:scaleX(1)
+}
+.image{
+    width: 50%;
+    transition: 0.4s ease;
+}
+.image:hover{
+    transform: translateY(-10px);
+}
+.image img{
+    width: 100%;
+}
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+}
+.footer a{
+    text-decoration: none;
+    color: #441313;
+    /* color: #999; */
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background-color: #dcd3c8;
+    height: 1px;
+    width:100% ;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom:15px;
+    /* margin-bottom: 0%;
+    padding-bottom: 0%; */
+}
+.nav-links .fa{
+    margin-right: 8px;
+}
+</style>
+<body>
+    <nav class="menu-bar">
+        <img src="pics/logo2.jpg" alt="logo" class="logo">
+        
+        <ul class="nav-links">
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="country.html" class="countr"><i class="fa fa-plane"></i>Explore India</a>
+        </li>
+        <li><a href="about.html"><i class="fa fa-user"></i>About Us</a></li>
+        <li><a href="contact.html"><i class="fa fa-phone"></i>Contact Us</a></li>
+        </ul>
+        <!-- <a href="#" class="registration-btn">Log in</a> -->
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h2>Outstanding solution for your need</h2>
+                <p>We are passionate team dedicated to providing top-quality services. Our mission is to make your journey better by delivering outstanding solution for your needs.With years of experience, we are confident in our ability to exceed your expectations.</p>
+                <a href="#" class="btn">Join Us Today</a>
+            </div>
+            <div class="image">
+                <img src="pics/banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>Copyright &copy; 2023,Easy website</p>
+    </div>
+</body>
+</html>
